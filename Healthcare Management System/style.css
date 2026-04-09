@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f1f5f9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f5f9;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav h2 {
+    color: darkblue;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+.home {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: url("bg.jpg") no-repeat center/cover;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.home h1, .home p {
+    position: relative;
+}
+
+section {
+    padding: 40px;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.doctor-card button {
+    margin-top: 10px;
+    padding: 8px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+}
+
+.speciality {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-left: 5px solid #38bdf8;
+    transition: 0.3s;
+}
+
+.speciality:hover {
+    transform: scale(1.02);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.speciality.active .content {
+    max-height: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+}
