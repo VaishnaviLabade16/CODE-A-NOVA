@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+}
+
+.search-box button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-box {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast div {
+    background: #1e293b;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
