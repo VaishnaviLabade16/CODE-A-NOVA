@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+
+<nav>
+    <h2 class="logo">Vaishnavi</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="home" class="home">
+     <div class="home-content">
+    <div>
+        <h1>Hello, I'm <span>Vaishnavi</span></h1>
+        <p>Frontend Developer | Passionate Learner</p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+    </div>
+       <img src="photo.jpeg" alt="Vaishnavi Photo" class="profile-img">
+
+    </div>
+     
+    <div class="social-icons">
+    <a href="https://github.com/VaishnaviLabade16" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/vaishnavi-labade-258169362/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</div>
+</section>
+
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate and dedicated Frontend Developer with a strong interest in building modern, responsive, and user-friendly web applications. I have hands-on experience with technologies like HTML, CSS, and JavaScript, and I enjoy turning creative ideas into real-world projects.
+
+        I am currently enhancing my skills through practical projects such as portfolio websites, weather applications, and UI clones like Amazon and Netflix. I focus on writing clean, efficient code and creating visually appealing designs that provide a great user experience.
+
+        I am always eager to learn new technologies, improve my problem-solving skills, and grow as a developer in a professional environment.
+</p>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div style="width:75%"></div></div>
+    </div>
+</section>
+
+
+<section id="experience">
+    <h2>Experience</h2>
+    <p>Frontend Intern at Code-A-Nova (2026)</p>
+</section>
+
+
+<section id="qualification">
+    <h2>Qualifications</h2>
+    <p>Bachelor's Degree in Computer Science</p>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Amazon-clone</h3>
+        <p>This project replicates the front page of Amazon using only HTML and CSS.
+             It features a fully styled navigation bar with a search bar and account links,
+              a hero image section, category boxes, product showcases, and promotional banners.
+             The design focuses on responsive layout techniques, including flexbox and grid,
+              to ensure the interface adapts well</p>
+        <a href="https://github.com/VaishnaviLabade16/Amazon-clone/tree/main/Amazon%20Clone">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Netflix-Clone</h3>
+        <p>This is a front-page Netflix clone developed using pure HTML and CSS.
+        The design replicates Netflix’s clean and engaging user interface, including 
+        a large hero banner, navigation bar, feature descriptions, and multiple content sections.
+         The layout is fully responsive and demonstrates skills in modern CSS styling, flexbox, and UI layout structure.</p>
+        <a href="https://github.com/VaishnaviLabade16/Netflix-Clone/tree/main/Netfix%20clone">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Healthcare Management System</h3>
+        <p>A responsive and user-friendly healthcare website built with HTML, CSS, and JavaScript.
+             Features include a Home page, Our Doctors section with detailed profiles, Our Specialities
+              with expandable info, Patient Appointment and Contact Us forms with validation and EmailJS confirmation.
+               Designed for smooth navigation, professional aesthetics, and seamless experience across all devices.</p>
+        <a href="https://github.com/VaishnaviLabade16/CODE-A-NOVA/tree/main/Healthcare%20Management%20System">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A responsive and interactive weather application that allows users to search real-time weather 
+            information by city, local area, or district. The app fetches data from a public API and displays 
+            temperature, humidity, wind speed, and current weather conditions, along with a short-term forecast. 
+            The interface dynamically adjusts visuals to reflect weather conditions such as sunny, rainy, or cloudy, 
+            providing an intuitive and engaging user experience. Designed with a clean layout and responsive design, 
+            it ensures accessibility and ease of use across all devices</p>
+        <a href="https://github.com/VaishnaviLabade16/CODE-A-NOVA/tree/main/Weather%20App">View Project</a>
+    </div>
+
+</section>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="status"></p>
+</section>
+
+
+<footer>
+    <p>© 2026 Vaishnavi | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
